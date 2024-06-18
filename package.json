@@ -5,17 +5,19 @@
 	"main": "index.js",
 	"private": true,
 	"scripts": {
-		"build": "turbo run build",
-		"build:services": "turbo run build --filter=rocketchat-services...",
-		"build:ci": "turbo run build:ci",
-		"testunit": "turbo run testunit",
-		"dev": "turbo run dev --parallel --filter=@rocket.chat/meteor...",
-		"dsv": "turbo run dsv --filter=@rocket.chat/meteor...",
-		"lint": "turbo run lint",
-		"storybook": "yarn workspace @rocket.chat/meteor run storybook",
-		"fuselage": "./fuselage.sh",
-		"fossify": "TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\"}' ts-node scripts/fossify.ts"
-	},
+    "build": "turbo run build",
+    "build:services": "turbo run build --filter=rocketchat-services...",
+    "build:ci": "turbo run build:ci",
+    "testunit": "turbo run testunit",
+    "dev": "turbo run dev --parallel --filter=@rocket.chat/meteor...",
+    "dsv": "turbo run dsv --filter=@rocket.chat/meteor...",
+    "lint": "turbo run lint",
+    "storybook": "yarn workspace @rocket.chat/meteor run storybook",
+    "fuselage": "./fuselage.sh",
+    "fossify": "TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\"}' ts-node scripts/fossify.ts",
+    "start": "yarn workspace @rocket.chat/meteor run start"
+}
+
 	"devDependencies": {
 		"@changesets/cli": "^2.26.2",
 		"@types/chart.js": "^2.9.39",
